@@ -1,6 +1,6 @@
 <template>
     <li
-        class="border border-gray-200 rounded-sm p-4 hover:bg-gray-100 font-mono"
+        class="border border-gray-200 rounded-sm p-4 hover:bg-gray-100 dark:hover:bg-gray-600 font-mono"
     >
         <a :href="repository.html_url" target="_blank">
             <div class="flex items-center justify-between">
