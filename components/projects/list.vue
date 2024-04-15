@@ -30,13 +30,23 @@
 </template>
 
 <script setup lang="ts">
-const { data, error, pending } = await useFetch(
+interface Repository {
+    id: number;
+    name: string;
+    html_url: string;
+    description: string;
+    stargazers_count: number;
+}
+
+const { data, error, pending } = await useFetch<Repository[]>(
     'https://api.github.com/users/piotr-jura-udemy/repos'
 );
 
-const repos = computed(() =>
-    data.value
+const repos = computed(() => {
+    if (!data.value) return [];
+
+    return data.value
         .filter((repo: any) => repo.description)
-        .sort((a: any, b: any) => b.stargazers_count - a.stargazers_count)
-);
+        .sort((a: any, b: any) => b.stargazers_count - a.stargazers_count);
+});
 </script>
