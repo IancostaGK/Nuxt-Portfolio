@@ -7,36 +7,18 @@
 
         <section v-else>
             <ul class="grid grid-cols-1 gap-4">
-                <li
+                <ProjectsItem
                     v-for="repository in repos"
                     :key="repository.id"
-                    class="border border-gray-200 rounded-sm p-4 hover:bg-gray-100 font-mono"
-                >
-                    <a :href="repository.html_url" target="_blank">
-                        <div class="flex items-center justify-between">
-                            <div class="font-semibold">
-                                {{ repository.name }}
-                            </div>
-                            <div>{{ repository.stargazers_count }}</div>
-                        </div>
-                        <p class="text-sm">
-                            {{ repository.description }}
-                        </p>
-                    </a>
-                </li>
+                    :repository
+                />
             </ul>
         </section>
     </div>
 </template>
 
 <script setup lang="ts">
-interface Repository {
-    id: number;
-    name: string;
-    html_url: string;
-    description: string;
-    stargazers_count: number;
-}
+import type { Repository } from '~/types/repository';
 
 const { data, error, pending } = await useFetch<Repository[]>(
     'https://api.github.com/users/piotr-jura-udemy/repos'
