@@ -10,12 +10,7 @@
                 </NuxtLink>
             </div>
 
-            <nav class="font-mono">
-                <ul class="flex space-x-4">
-                    <li><NuxtLink to="/">Main</NuxtLink></li>
-                    <li><NuxtLink to="/about">About</NuxtLink></li>
-                </ul>
-            </nav>
+            <Menu />
         </header>
 
         <main class="p-2">
@@ -24,5 +19,25 @@
     </div>
 </template>
 
-<script setup lang="ts"></script>
-<style scoped></style>
+<script setup>
+useHead({
+    titleTemplate: '%s - Ian Santos',
+    link: [
+        {
+            rel: 'preconnect',
+            href: 'https://fonts.googleapis.com',
+        },
+        {
+            rel: 'stylesheet',
+            href: 'https://fonts.googleapis.com/css2?family=Roboto&display=swap',
+            crossorigin: '',
+        },
+    ],
+});
+</script>
+
+<style>
+body {
+    font-family: 'Roboto';
+}
+</style>

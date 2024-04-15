@@ -1,7 +1,9 @@
-<script setup lang="ts"></script>
-
 <template>
     <div>About Page</div>
 </template>
 
-<style scoped></style>
+<script setup>
+useHead({
+    title: 'About',
+});
+</script>
