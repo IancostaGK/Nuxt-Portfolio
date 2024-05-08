@@ -2,7 +2,7 @@
 import type { Blog } from '~/types/blog';
 
 const props = defineProps<{
-    limit: number | null;
+    limit?: number | null;
 }>();
 
 const { data } = await useAsyncData('blog-list', () => {
