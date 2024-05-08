@@ -2,6 +2,7 @@
 title: 'My Page Title'
 description: 'What a lovely page.'
 publishedAt: '2023-07-12 17:15:00'
+toc: true
 image:
     src: '/assets/image.jpg'
     alt: 'An image showcasing My Page.'
