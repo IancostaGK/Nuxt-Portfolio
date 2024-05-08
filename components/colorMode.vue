@@ -28,7 +28,7 @@ const toggleMode = () => {
         >
         <button
             @click="toggleMode"
-            class="hover:bg-gray-100 dark:hover:bg-gray-600 px-2 py-1"
+            class="hover:bg-gray-100 dark:hover:bg-gray-600 px-2 py-1 text-4xl md:text-base"
             @mouseenter="showNextMode = true"
             @mouseleave="showNextMode = false"
         >
