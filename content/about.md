@@ -1,31 +1,38 @@
 ---
-description: 'meta description of the page'
+description: 'Descrição sobre Ian Santos'
 toc: true
 ---
 
-# Hello There, I'm Piotr
+# Olá, sou Ian Santos
 
-## About me
+## Sobre mim
 
-I'm Piotr, I'm a developer and a Udemy Instructor. I'm 36, living in southern Poland with my wife and 2 golden retrievers. I'm vegan and pro-animal 🥑.
+Desenvolvedor Front End com experiência em criar interfaces de usuário intuitivas. Durante minha carreira,
+contribuí para inúmeros projetos, entregando soluções impactantes que melhoraram as experiências dos
+usuários em diversas plataformas. Trabalhei em diversos projetos, liderando o desenvolvimento de sites de
+alto tráfego, implementando designs responsivos para aplicativos móveis e otimizando o desempenho do
+site para melhorar o envolvimento do usuário. Sou apaixonado por criar interfaces intuitivas e visualmente
+atraentes para os usuários.
 
-## What I teach on Udemy
+## O que ensino na Udemy
 
-I teach mostly web development and I have courses on:
+Meus cursos na Udemy abrangem principalmente desenvolvimento Frontend, com foco em tecnologias como:
 
--   Laravel (PHP framework)
--   Laravel & Vue & Inertia (PHP framework/JavaScript frontend framework)
--   Symfony (PHP framework)
--   NestJS (Node.js framework)
--   Nuxt 3 (JavaScript Full-stack framework)
+-   Vue.js
+-   Quasar Framework
+-   React.js
+-   Next.js
+-   HTML/CSS
+-   JavaScript
 
-## What software/hardware do I use?
+## Quais softwares/hardwares uso?
 
-Here's a list of everyday used software and hardware:
+Aqui está uma lista do software e hardware que utilizo diariamente:
 
--   MacBook Pro 16 2021
--   Rode NT USB microphone
--   VSCode
--   Chrome
--   ScreenFlow (Mac only)
--   Docker
+-   Visual Studio Code
+-   Webstorm
+-   Github
+-   Git
+-   Azure Devops
+
+Estou sempre buscando aprender e ensinar novas tecnologias para contribuir ainda mais com o mundo da programação e do desenvolvimento web.

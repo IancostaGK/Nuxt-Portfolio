@@ -21,8 +21,10 @@
 import type { Repository } from '~/types/repository';
 
 const { data, error, pending } = await useFetch<Repository[]>(
-    'https://api.github.com/users/piotr-jura-udemy/repos'
+    'https://api.github.com/users/iancostagk/repos'
 );
+
+console.log(data);
 
 const repos = computed(() => {
     if (!data.value) return [];
