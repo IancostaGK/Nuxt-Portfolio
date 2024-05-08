@@ -1,7 +1,7 @@
 <script setup lang="ts"></script>
 
 <template>
-    <div>Blogs</div>
+    <div>All</div>
 </template>
 
 <style scoped></style>

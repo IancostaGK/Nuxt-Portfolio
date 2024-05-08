@@ -1,7 +1,10 @@
 <template>
-    <div>We are on the blog page with id: {{ route.params.id }}</div>
+    <article>
+        <ContentDoc />
+    </article>
 </template>
 
 <script setup lang="ts">
 const route = useRoute();
+console.log(route.params.slug);
 </script>
