@@ -1,5 +1,7 @@
 <template>
-    <div>About Page</div>
+    <article class="prose dark:prose-invert">
+        <ContentDoc path="/about" />
+    </article>
 </template>
 
 <script setup>

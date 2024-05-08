@@ -8,5 +8,12 @@ export default defineNuxtConfig({
     colorMode: {
         classSuffix: '',
     },
-    content: {},
+    content: {
+        highlight: {
+            theme: {
+                default: 'min-light',
+                dark: 'min-dark',
+            },
+        },
+    },
 });
