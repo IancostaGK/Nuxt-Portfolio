@@ -4,6 +4,7 @@ import type { TocLink } from '@nuxt/content/types';
 defineProps<{
     links?: TocLink[];
     level?: number;
+    activeId: string | null;
 }>();
 
 const route = useRoute();
@@ -14,11 +15,18 @@ const route = useRoute();
         <li v-for="link in links" :key="link.id">
             <NuxtLink
                 :to="{ path: route.path, hash: `#${link.id}` }"
-                :class="{ 'ml-4': !!level }"
+                :class="{
+                    'ml-4': !!level,
+                    'text-green-600': activeId === link.id,
+                }"
             >
                 {{ link.text }}
             </NuxtLink>
-            <TocLinks :links="link.children" :level="level || 0 + 1" />
+            <TocLinks
+                :activeId
+                :links="link.children"
+                :level="level || 0 + 1"
+            />
         </li>
     </ul>
 </template>
