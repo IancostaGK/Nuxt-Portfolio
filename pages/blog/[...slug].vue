@@ -2,6 +2,7 @@
 const activeId = ref<string | null>(null);
 
 onMounted(() => {
+    let elements = document.querySelectorAll('h2, h3');
     const callback = (entries: IntersectionObserverEntry[]) => {
         for (const entry of entries) {
             if (entry.isIntersecting) {
@@ -11,18 +12,20 @@ onMounted(() => {
         }
     };
 
-    const oberver = new IntersectionObserver(callback, {
+    const observer = new IntersectionObserver(callback, {
         threshold: 0.5,
         root: null,
     });
 
-    const elements = document.querySelectorAll('h2, h3');
-    for (const element of elements) {
-        oberver.observe(element);
-    }
+    setTimeout(() => {
+        elements = document.querySelectorAll('h2, h3');
+        for (const element of elements) {
+            observer.observe(element);
+        }
+    }, 150);
 
     onUnmounted(() => {
-        oberver.disconnect();
+        observer.disconnect();
     });
 });
 </script>
