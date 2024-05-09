@@ -18,17 +18,17 @@
 </template>
 
 <script setup lang="ts">
-import type { Repository } from '~/types/repository';
+import type { Repository } from '~/types/repository.ts';
 
 const { data, error, pending } = await useFetch<Repository[]>(
-    'https://api.github.com/users/piotr-jura-udemy/repos'
+    'https://api.github.com/users/iancostagk/repos'
 );
 
 const repos = computed(() => {
     if (!data.value) return [];
 
-    return data.value
-        .filter((repo: any) => repo.description)
-        .sort((a: any, b: any) => b.stargazers_count - a.stargazers_count);
+    return data.value.sort(
+        (a: any, b: any) => b.stargazers_count - a.stargazers_count
+    );
 });
 </script>
