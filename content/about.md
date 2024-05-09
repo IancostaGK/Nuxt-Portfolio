@@ -14,9 +14,7 @@ alto tráfego, implementando designs responsivos para aplicativos móveis e otim
 site para melhorar o envolvimento do usuário. Sou apaixonado por criar interfaces intuitivas e visualmente
 atraentes para os usuários.
 
-## O que ensino na Udemy
-
-Meus cursos na Udemy abrangem principalmente desenvolvimento Frontend, com foco em tecnologias como:
+## Skills
 
 -   Vue.js
 -   Quasar Framework
